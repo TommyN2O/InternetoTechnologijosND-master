@@ -1,0 +1,168 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 94.5%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.container {
+    max-width: 300px;
+    margin: 300px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.button {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #0056b3;
+}
+
+.bottom-text {
+    margin: auto;
+    padding-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.todos-header {
+    text-align: center;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.todos-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.todos-design {
+    width: 200px;
+    height: 150px;
+    background-color: #fff950;
+    padding: 10px;
+    padding-right: 35px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    word-wrap: break-word;
+}
+
+.delete-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #fff950;
+    color: #ff0000;
+    cursor: pointer;
+    opacity: 1;
+    z-index: 1;
+    font-weight: bold;
+}
+
+.update-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #fff950;
+    color: #008000;
+    cursor: pointer;
+    opacity: 1;
+    z-index: 1;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.edit-button {
+    position: absolute;
+    margin-top: 28px;
+    top: 5px;
+    right: 5px;
+    background-color: #fff950;
+    color: deepskyblue;
+    cursor: pointer;
+    opacity: 1;
+    z-index: 1;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.add-todo-button {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+.add-todo-button:hover {
+    background-color: #0056b3;
+}
+
+.return-to-login-button {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+.return-to-login-button:hover {
+    background-color: #0056b3;
+}
+
+.return-button {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 5px;
+}
+.return-button:hover {
+    background-color: #0056b3;
+}

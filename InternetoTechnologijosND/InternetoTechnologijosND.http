@@ -1,0 +1,53 @@
+﻿@InternetoTechnologijosND_HostAddress = https://localhost:7119
+
+POST {{InternetoTechnologijosND_HostAddress}}/users/createToken
+Content-Type: application/json
+
+{
+  "Username":"joydip",
+  "Password":"joydip123"
+}
+###
+
+GET {{InternetoTechnologijosND_HostAddress}}/todo
+// Get all items
+
+###
+
+GET {{InternetoTechnologijosND_HostAddress}}/todo/1
+// Get item by id
+
+###
+
+GET {{InternetoTechnologijosND_HostAddress}}/todo/complete
+// Get all compelted items
+
+###
+
+POST {{InternetoTechnologijosND_HostAddress}}/todo
+// Add new item
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjdjOTI5NDhiLTU0YTgtNGNmMy1hZjI4LWE5YWFlMThjMzJkYSIsInN1YiI6ImpveWRpcCIsImVtYWlsIjoiam95ZGlwIiwianRpIjoiMTY2NzJmN2EtOTMxNi00NWFjLWEwMDktZDRhMmQ2YjhhN2U3IiwibmJmIjoxNzE0NDExMjA1LCJleHAiOjE3MTQ0MTE4MDUsImlhdCI6MTcxNDQxMTIwNSwiaXNzIjoiaHR0cHM6Ly9qb3lkaXBrYW5qaWxhbC5jb20vIiwiYXVkIjoiaHR0cHM6Ly9qb3lkaXBrYW5qaWxhbC5jb20vIn0.Lh6GIeq8kIwTYTE3hs4zGhjzcxAYMpu5I8KLhsnTaixgBNBbrYOC2hAgDrl3vQqug_-4cDx4dK6BC4VANgunwQ
+
+{
+  "name":"13",
+  "isComplete":true
+}
+###
+
+PUT {{InternetoTechnologijosND_HostAddress}}/todo/1
+// Update item by id
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJJZCI6ImVhMTM2ZmNhLThkNDEtNDBjNC05MzEwLTZiY2ZhZmZlYzU5NCIsInN1YiI6ImpveWRpcCIsImVtYWlsIjoiam95ZGlwIiwianRpIjoiMWFhZTBmYzMtMWUwNC00NjM5LTlmZGMtZDcwZjdlYjZiNTk2IiwibmJmIjoxNzE0MTE1MjA1LCJleHAiOjE3MTQxMTU4MDUsImlhdCI6MTcxNDExNTIwNSwiaXNzIjoiaHR0cHM6Ly9qb3lkaXBrYW5qaWxhbC5jb20vIiwiYXVkIjoiaHR0cHM6Ly9qb3lkaXBrYW5qaWxhbC5jb20vIn0.zQowqzvixmoxnedAt05Dg1j6xpeQqaz0XrmbxpWtp6_0dAOsZahB3Zon3TPMT0dNZRvk4Mi5xbIPTd7GARTY_g
+
+{
+  "name": "feed fish",
+  "isComplete": false
+}
+###
+
+DELETE {{InternetoTechnologijosND_HostAddress}}/todo/1
+Authorization: Bearer .eyJJZCI6ImJiYjJhYjY3LWI5MTktNGY1My05YzgyLTYwY2FmY2IwMWRlOCIsInN1YiI6ImpveWRpcCIsImVtYWlsIjoiam95ZGlwIiwianRpIjoiZjQxMmVhYWQtZjk3MC00Nzk0LWE2ZDYtZDk4ZTNjMDM4MmQ3IiwibmJmIjoxNzE0MDg3MDcyLCJleHAiOjE3MTQwODc2NzIsImlhdCI6MTcxNDA4NzA3MiwiaXNzIjoiaHR0cHM6Ly9qb3lkaXBrYW5qaWxhbC5jb20vIiwiYXVkIjoiaHR0cHM6Ly9qb3lkaXBrYW5qaWxhbC5jb20vIn0.35W7ibtWGKa3_CAlXnFNRqVsMaXUpwNvD-jpQ9ubJ3sauyt4kE91dCWofKHVgzasy5ci4_wSLOrGyI54AIZVzw
+// Delete item by id
+
+###
